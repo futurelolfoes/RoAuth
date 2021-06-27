@@ -1,7 +1,7 @@
 # RoAuth, developed by github.com/n0vuh
 
 # Configuration
-BOT_TOKEN = "ODU4NTQzMTk5MTU3MzU0NDk2.YNfqqQ.DR6AX4T2LeDijWkMmrurrBR05rw"
+BOT_TOKEN = ""
 BOT_PREFIX = "r!"
 WORD_FILE = "words.txt"
 KEY_COUNT = 5
