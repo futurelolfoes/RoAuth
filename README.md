@@ -19,5 +19,4 @@ RoAuth uses aiohttp & asyncio to make non-blocking requests to retrieve user inf
 * asyncio
 * discord.py
 * nest_asyncio
-* rich
 * random
