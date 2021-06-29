@@ -11,27 +11,20 @@ COOLDOWN = 2
 # Imports/Dependencies
 import discord
 
-from rich import print
-from rich.console import Console
 from discord.ext import commands
 from asyncio import sleep
 from backend import check, words
 
-# Setup rich
-con = Console()
-con.clear()
-
 # Setup client
-with con.status("[red]Setting up client[/red]", spinner="point", spinner_style="white"):
-    word_list = words.get_words(WORD_FILE)
-    roauth = commands.Bot(BOT_PREFIX, help_command=None, description="A simple bot to authenticate ownership of Roblox accounts. github.com/n0vuh")
-    intents = discord.Intents.all()
-    intents.members = True
+word_list = words.get_words(WORD_FILE)
+roauth = commands.Bot(BOT_PREFIX, help_command=None, description="A simple bot to authenticate ownership of Roblox accounts. github.com/n0vuh")
+intents = discord.Intents.all()
+intents.members = True
 
 # Commands
 @roauth.event
 async def on_ready():
-    print(f"[white]RoAuth is online![/white]\n[white]Logged into:[/white] [red]{roauth.user}[/red]\n")
+    print(f"RoAuth is online.\nLogged into: {roauth.user}")
     
 @roauth.event
 async def on_command_error(ctx, error):
