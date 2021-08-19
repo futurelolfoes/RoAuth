@@ -1,8 +1,8 @@
 # RoAuth, developed by github.com/n0vuh
 
 # Configuration
-BOT_TOKEN = ""
-BOT_PREFIX = "r!"
+BOT_TOKEN = "ODc3ODA5MzcxNjkyODAyMDk4.YR4Brw.6V3Lc3K9r_6JE-S78OneYBGY0Hs"
+BOT_PREFIX = "f!"
 WORD_FILE = "words.txt"
 KEY_COUNT = 5
 CHECKS = 10
@@ -17,7 +17,7 @@ from backend import check, words
 
 # Setup client
 word_list = words.get_words(WORD_FILE)
-roauth = commands.Bot(BOT_PREFIX, help_command=None, description="A simple bot to authenticate ownership of Roblox accounts. github.com/n0vuh")
+roauth = commands.Bot(BOT_PREFIX, help_command=None, description="A simple bot to authenticate ownership of Roblox accounts.")
 intents = discord.Intents.all()
 intents.members = True
 
